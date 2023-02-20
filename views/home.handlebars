@@ -1,0 +1,17 @@
+<h1>Welcome to E-commerce!</h1>
+
+<hr>
+
+<h2>Our Products</h2>
+
+<ul>
+    {{#each products}}
+    <li>
+        {{#with this}}
+        <h3>{{title}}</h3>
+        <p>R$ {{price}}</p>
+        <a href="/product/{{id}}">Details</a>
+        {{/with}}
+    </li>
+    {{/each}}
+</ul>
